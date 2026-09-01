@@ -230,7 +230,7 @@ const Manager = () => {
 
                                             <td className=' py-2 text-center '>
                                                 <div className=' flex items-center justify-center gap-2'>
-                                                    {item.password} <FaRegCopy onClick={() => { copyText(item.password) }} className='cursor-ptext-sm ' />
+                                                    {item.password} <FaRegCopy onClick={() => { copyText(item.password) }} className='cursor-pointer text-sm ' />
                                                 </div>
                                             </td>
 
