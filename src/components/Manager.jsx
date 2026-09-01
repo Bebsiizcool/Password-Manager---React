@@ -28,45 +28,45 @@ const Manager = () => {
         setShowPassword(!showPassword)
     }
 
-    const savepass = () => {
-        if(form.site.length >3 && form.username.length >3 && form.password.length >3 ){
-        setpasswordarr([...passwordarr, { ...form, id: uuidv4() }])
-        localStorage.setItem("passwords", JSON.stringify([...passwordarr, { form, id: uuidv4() }]))
+   const savepass = () => {
+    if (
+        form.site.length > 3 &&
+        form.username.length > 3 &&
+        form.password.length > 3
+    ) {
+        const newPassword = {
+            ...form,
+            id: uuidv4()
+        }
+
+        const updatedPasswords = [...passwordarr, newPassword]
+
+        setpasswordarr(updatedPasswords)
+
+        localStorage.setItem(
+            "passwords",
+            JSON.stringify(updatedPasswords)
+        )
+
         setform({
             site: "",
             username: "",
             password: ""
         })
 
-         toast('Record Saved', {
+        toast("Record Saved", {
             position: "top-right",
             autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
             theme: "dark",
-
-
-        });
-        }
-
-        else{
-             toast('Error: Password not saved', {
+        })
+    } else {
+        toast("Error: Password not saved", {
             position: "top-right",
             autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
             theme: "dark",
-
-
-        });
-        }
+        })
     }
+}
 
     const Deletepass = (id) => {
         setpasswordarr(passwordarr.filter(item => item.id !== id))
