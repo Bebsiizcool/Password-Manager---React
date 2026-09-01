@@ -17,10 +17,12 @@ const Navbar = () => {
                         <a className='hover:font-bold' href="">Contact</a>
                     </li>
                 </ul>
+                <a href="https://github.com/Bebsiizcool/PasswordManager-React" target='_blank'>
                 <button className='text-white bg-green-700 flex items-center rounded-lg gap-2 px-3 py-1 cursor-pointer'>
                     <FaGithub className='text-3xl' />
                     GitHub
                 </button>
+                    </a>
             </div>
         </nav>
     )
