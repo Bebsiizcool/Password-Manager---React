@@ -140,11 +140,12 @@ const Manager = () => {
                 progressClassName="!bg-green-300"
 
             />
-            <div className="absolute inset-0 -z-10 h-full w-full bg-green-50 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"><div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400 opacity-20 blur-[100px] min-h-[100vh]"></div></div>
+            <div className="relative isolate min-h-screen  pb-10">
+            <div className="absolute inset-0 -z-10 h-full w-full bg-green-50 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"><div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400 opacity-20 blur-[100px]  "></div></div>
+            
+            <div className=" p-2 md:p-0 md:container mx-auto  ">
 
-            <div className=" p-2 md:p-0 md:container mx-auto mt-20 h-[78vh]">
-
-                <h1 className='text-4xl font-bold text-center'>
+                <h1 className='text-4xl font-bold text-center pt-20'>
                     <span className='text-green-500'> &lt;</span>
                     <span>Pass</span><span className='text-green-500'>OP/&gt; </span>
                 </h1>
@@ -247,6 +248,7 @@ const Manager = () => {
 
 
                 </div>
+            </div>
             </div>
         </div>
     )
