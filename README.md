@@ -1,5 +1,5 @@
 Password Manager
-![Password Manager Preview](./assets/preview.png)
+<img src="./src/assets/preview.png" alt="Password Manager Preview" width="100%" height="auto" />
 A modern and fully responsive **Password Manager** web application built using **React** and **Tailwind CSS**. This application allows users to save, view, and manage their website credentials through a clean and user-friendly interface.
 
 The project focuses on strengthening core React concepts such as **state management**, **side effects**, handling user input, and working with browser storage.
